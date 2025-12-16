@@ -1,0 +1,30 @@
+.flavor-wheel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flavor-wheel {
+  display: block;
+}
+
+.flavor-segment {
+  transition: opacity 0.3s ease;
+}
+
+.flavor-segment.selected {
+  filter: brightness(1.1);
+  stroke-width: 3px !important;
+}
+
+.flavor-label {
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .flavor-wheel {
+    width: 100%;
+    height: auto;
+  }
+}
+
