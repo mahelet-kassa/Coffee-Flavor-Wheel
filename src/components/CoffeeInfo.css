@@ -1,0 +1,690 @@
+.coffee-info {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.coffee-header {
+  margin-bottom: 40px;
+  padding-bottom: 25px;
+  border-bottom: 3px solid #e8e6e3;
+  border-left: 5px solid;
+  padding-left: 20px;
+}
+
+.coffee-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.coffee-price-header {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #8B6F47;
+  margin-top: 8px;
+}
+
+.best-seller-label {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-left: 10px;
+}
+
+.coffee-header h2 {
+  font-size: 2.25rem;
+  color: #3E2723;
+  margin: 0 0 8px 0;
+  font-weight: 700;
+  font-family: 'Georgia', serif;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.flavor-badge {
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.coffee-section {
+  margin-bottom: 40px;
+}
+
+.coffee-section:last-child {
+  margin-bottom: 0;
+}
+
+.education-section {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 2px solid #e8e6e3;
+}
+
+.coffee-section h3 {
+  font-size: 1.75rem;
+  color: #3E2723;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid #e8e6e3;
+  font-weight: 700;
+  font-family: 'Georgia', serif;
+  letter-spacing: -0.3px;
+}
+
+.examples-list {
+  list-style: none;
+  padding: 0;
+}
+
+.examples-list li {
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 3px solid #667eea;
+  font-size: 1rem;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.shop-button {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #8B6F47 0%, #6B5638 100%);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(62, 39, 35, 0.3);
+}
+
+.shop-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(62, 39, 35, 0.4);
+  background: linear-gradient(135deg, #6B5638 0%, #5a4a3a 100%);
+}
+
+.zoma-commitment {
+  margin-top: 15px;
+  padding: 12px;
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #2e7d32;
+}
+
+.zoma-commitment strong {
+  color: #1b5e20;
+}
+
+.region-info {
+  margin-top: 20px;
+  padding: 15px;
+  background: linear-gradient(135deg, #f0f4ff 0%, #e0e7ff 100%);
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.region-info h4 {
+  font-size: 1.1rem;
+  color: #667eea;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.region-info p {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+
+
+.tasting-notes {
+  list-style: none;
+  padding: 0;
+}
+
+.tasting-notes li {
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.note-icon {
+  font-size: 1.2rem;
+}
+
+.brewing-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.brewing-method-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 20px;
+  border-left: 4px solid #667eea;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.brewing-method-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.method-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.method-header h4 {
+  font-size: 1.3rem;
+  color: #333;
+  margin: 0;
+}
+
+.method-details {
+  display: flex;
+  gap: 15px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.method-details .ratio,
+.method-details .time {
+  background: white;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-weight: 500;
+}
+
+.method-description {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.user-tastings {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.user-tasting-card {
+  background: linear-gradient(135deg, #fff9f0 0%, #fef5e7 100%);
+  border-radius: 16px;
+  padding: 0;
+  border: 2px solid rgba(212, 165, 116, 0.2);
+  box-shadow: 0 4px 12px rgba(139, 111, 71, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.user-tasting-card:hover {
+  box-shadow: 0 6px 20px rgba(139, 111, 71, 0.15);
+  transform: translateY(-2px);
+}
+
+.user-tasting-card.expanded {
+  border-color: rgba(212, 165, 116, 0.4);
+  box-shadow: 0 8px 24px rgba(139, 111, 71, 0.2);
+}
+
+.tasting-summary {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.user-tasting-card:not(.expanded) .tasting-summary {
+  cursor: default;
+}
+
+.tasting-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  gap: 15px;
+}
+
+.tasting-title-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.tasting-title-section strong {
+  font-size: 1.2rem;
+  color: #6B5638;
+  font-weight: 700;
+}
+
+.tasting-date {
+  font-size: 0.85rem;
+  color: #8B6F47;
+  font-weight: 500;
+}
+
+.tasting-quick-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.tasting-rating {
+  display: flex;
+  align-items: center;
+}
+
+.stars {
+  color: #ffa500;
+  font-size: 1.3rem;
+  filter: drop-shadow(0 1px 2px rgba(255, 165, 0, 0.3));
+}
+
+.expand-button {
+  background: linear-gradient(135deg, #D4A574 0%, #8B6F47 100%);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(139, 111, 71, 0.3);
+  flex-shrink: 0;
+}
+
+.expand-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(139, 111, 71, 0.4);
+}
+
+.tasting-notes-preview {
+  color: #555;
+  line-height: 1.7;
+  margin: 0;
+  font-size: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.user-tasting-card.expanded .tasting-notes-preview {
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(212, 165, 116, 0.2);
+}
+
+.tasting-details {
+  padding: 0 20px 20px 20px;
+  animation: slideDown 0.3s ease-out;
+  border-top: 2px solid rgba(212, 165, 116, 0.15);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    max-height: 1000px;
+    transform: translateY(0);
+  }
+}
+
+.tasting-details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detail-label {
+  font-size: 0.85rem;
+  color: #8B6F47;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detail-value {
+  font-size: 1rem;
+  color: #6B5638;
+  font-weight: 600;
+}
+
+.detail-slider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.slider-bar {
+  flex: 1;
+  height: 8px;
+  background: rgba(212, 165, 116, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slider-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #D4A574 0%, #8B6F47 100%);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.slider-value {
+  font-size: 0.9rem;
+  color: #6B5638;
+  font-weight: 600;
+  min-width: 35px;
+}
+
+.detail-section {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(212, 165, 116, 0.15);
+}
+
+.detail-section-label {
+  display: block;
+  font-size: 0.85rem;
+  color: #8B6F47;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.detail-tag {
+  background: linear-gradient(135deg, #D4A574 0%, #8B6F47 100%);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(139, 111, 71, 0.2);
+}
+
+.detail-text {
+  color: #555;
+  line-height: 1.7;
+  margin: 0;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+/* Tastings Header Controls */
+.tastings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.tastings-header h3 {
+  margin: 0;
+}
+
+.tastings-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.sort-select {
+  padding: 8px 12px;
+  border: 2px solid rgba(212, 165, 116, 0.3);
+  border-radius: 8px;
+  background: white;
+  color: #6B5638;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sort-select:hover {
+  border-color: #D4A574;
+  box-shadow: 0 2px 8px rgba(139, 111, 71, 0.15);
+}
+
+.sort-select:focus {
+  outline: none;
+  border-color: #8B6F47;
+  box-shadow: 0 0 0 3px rgba(212, 165, 116, 0.2);
+}
+
+.export-button {
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #D4A574 0%, #8B6F47 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(139, 111, 71, 0.2);
+}
+
+.export-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(139, 111, 71, 0.3);
+}
+
+/* Tasting Actions */
+.tasting-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.edit-button,
+.delete-button {
+  background: transparent;
+  border: 2px solid rgba(212, 165, 116, 0.3);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.edit-button:hover {
+  background: rgba(212, 165, 116, 0.1);
+  border-color: #8B6F47;
+  transform: scale(1.1);
+}
+
+.delete-button:hover {
+  background: rgba(220, 53, 69, 0.1);
+  border-color: #dc3545;
+  transform: scale(1.1);
+}
+
+/* Edit Modal */
+.edit-tasting-modal {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Personality Display */
+.personality-section {
+  background: linear-gradient(135deg, rgba(212, 165, 116, 0.1) 0%, rgba(139, 111, 71, 0.05) 100%);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(212, 165, 116, 0.2);
+}
+
+.personality-display {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.personality-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(212, 165, 116, 0.1);
+}
+
+.personality-item:last-child {
+  border-bottom: none;
+}
+
+.personality-question-label {
+  font-weight: 600;
+  color: #8B6F47;
+  font-size: 0.9rem;
+  min-width: 100px;
+}
+
+.personality-answer {
+  color: #6B5638;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .tastings-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .tastings-controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .sort-select,
+  .export-button {
+    flex: 1;
+  }
+  
+  .personality-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .personality-question-label {
+    min-width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .coffee-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .method-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .tasting-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
