@@ -1,13 +1,13 @@
-# Zoma Coffee Roaster - Interactive Flavor Wheel
+#Coffee Roaster - Interactive Flavor Wheel
 
-An interactive coffee flavor wheel built with React and D3.js for [Zoma Coffee Roaster](https://www.zomacoffeeroaster.com/). Explore the unique flavors of our premium Ethiopian coffees: Harrar, Sidamo, Yirgacheffe, and Guji.
+An interactive coffee flavor wheel built with React and D3.js for Zoma Coffee Roaster. Explore the unique flavors of our premium Ethiopian coffees: Harrar, Sidamo, Yirgacheffe, and Guji.
 
 **Crafting connections that go beyond the cup**
 
 ## Features
 
 - 🎯 **Interactive Flavor Wheel**: Click on different flavor sections (fruity, nutty, floral, etc.) to explore coffee characteristics
-- ☕ **Zoma Coffee Products**: Discover our Ethiopian coffees - Harrar, Sidamo, Yirgacheffe (Best Seller), and Guji
+- ☕ ** Coffee Products**: Discover our Ethiopian coffees - Harrar, Sidamo, Yirgacheffe (Best Seller), and Guji
 - 📝 **Tasting Notes**: Learn about the typical tasting notes for each flavor category
 - 🍵 **Brewing Methods**: Get suggested brewing methods with ratios and timing for each flavor type
 - ✍️ **Personal Tasting Journal**: Add your own tasting experiences with ratings and notes
@@ -89,7 +89,7 @@ src/
 - Save notes and dates
 - View your tastings grouped by flavor
 
-## About Zoma Coffee Roaster
+## About Coffee Roaster
 
 Zoma Coffee Roaster is dedicated to delivering high-quality fair trade coffee beans with a focus on sustainability and organic practices. We offer our customers the opportunity to engage with fellow coffee enthusiasts in the Boston area through our events and resources.
 
@@ -98,7 +98,7 @@ Zoma Coffee Roaster is dedicated to delivering high-quality fair trade coffee be
 - 🤝 **Fair Trade**: Supporting ethical sourcing and fair wages
 - ♻️ **Sustainable**: Committed to environmental responsibility
 
-Visit us at [zomacoffeeroaster.com](https://www.zomacoffeeroaster.com/) - Free shipping on orders over $35!
+Free shipping on orders over $35!
 
 ## License
 
