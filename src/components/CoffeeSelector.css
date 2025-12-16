@@ -1,0 +1,135 @@
+.coffee-selector {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.coffee-selector h2 {
+  font-size: 2.5rem;
+  color: #3E2723;
+  margin-bottom: 12px;
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Georgia', serif;
+  letter-spacing: -0.5px;
+}
+
+.selector-subtitle {
+  text-align: center;
+  color: #6B5638;
+  margin-bottom: 50px;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.coffee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 0;
+}
+
+.coffee-card {
+  background: white;
+  border: 2px solid rgba(139, 111, 71, 0.2);
+  border-radius: 20px;
+  padding: 30px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  box-shadow: 0 4px 20px rgba(62, 39, 35, 0.08);
+  overflow: hidden;
+}
+
+.coffee-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: currentColor;
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+  transform-origin: left;
+}
+
+.coffee-card:hover::before {
+  transform: scaleX(1);
+}
+
+.coffee-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(62, 39, 35, 0.2);
+  border-color: currentColor;
+  border-width: 2px;
+}
+
+.coffee-card.selected {
+  border-width: 3px;
+  box-shadow: 0 16px 40px rgba(62, 39, 35, 0.25);
+  transform: translateY(-4px);
+}
+
+.coffee-card.selected::before {
+  transform: scaleX(1);
+}
+
+.best-seller-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.coffee-card h3 {
+  font-size: 1.75rem;
+  color: #3E2723;
+  margin-bottom: 12px;
+  margin-top: 0;
+  font-weight: 700;
+  font-family: 'Georgia', serif;
+  line-height: 1.2;
+}
+
+.coffee-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #8B6F47;
+  margin-bottom: 12px;
+}
+
+.coffee-description {
+  color: #5a4a3a;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  min-height: 60px;
+}
+
+.coffee-flavor-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .coffee-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .coffee-selector h2 {
+    font-size: 1.5rem;
+  }
+}
+
