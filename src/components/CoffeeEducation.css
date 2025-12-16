@@ -1,0 +1,347 @@
+.coffee-education {
+  margin-top: 30px;
+}
+
+.education-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #e8e6e3;
+  padding-bottom: 0;
+}
+
+.tab-button {
+  background: transparent;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #8B6F47;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+  top: 2px;
+}
+
+.tab-button:hover {
+  color: #6B5638;
+  background: rgba(139, 111, 71, 0.05);
+}
+
+.tab-button.active {
+  color: #6B5638;
+  border-bottom-color: #8B6F47;
+  background: rgba(139, 111, 71, 0.08);
+}
+
+.education-content {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.education-intro {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: #5a4a3a;
+  margin-bottom: 40px;
+  padding: 28px;
+  background: linear-gradient(135deg, #faf8f5 0%, #f5f2ed 100%);
+  border-radius: 16px;
+  border-left: 5px solid #8B6F47;
+  box-shadow: 0 2px 8px rgba(62, 39, 35, 0.05);
+}
+
+.education-content h3 {
+  font-size: 2.25rem;
+  color: #3E2723;
+  margin-bottom: 24px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  font-family: 'Georgia', serif;
+}
+
+/* Roast Levels */
+.roast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.roast-card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  border-top: 5px solid;
+  box-shadow: 0 4px 16px rgba(62, 39, 35, 0.08);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #f0ede8;
+}
+
+.roast-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(62, 39, 35, 0.15);
+}
+
+.roast-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.roast-header h4 {
+  font-size: 1.4rem;
+  color: #3E2723;
+  margin: 0;
+  font-weight: 700;
+}
+
+.roast-color-indicator {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.roast-description {
+  color: #6B5638;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.roast-characteristics {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.roast-characteristics li {
+  padding: 10px 0;
+  padding-left: 25px;
+  position: relative;
+  color: #5a4a3a;
+  line-height: 1.6;
+  border-bottom: 1px solid #f0ede8;
+}
+
+.roast-characteristics li:last-child {
+  border-bottom: none;
+}
+
+.roast-characteristics li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #8B6F47;
+  font-weight: bold;
+}
+
+.coffee-roast-info {
+  background: linear-gradient(135deg, #fff8f0 0%, #faf5eb 100%);
+  border-radius: 12px;
+  padding: 25px;
+  border: 2px solid #e8e6e3;
+  margin-top: 20px;
+}
+
+.roast-match {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #5a4a3a;
+  margin: 0;
+}
+
+.roast-match strong {
+  color: #3E2723;
+  font-weight: 700;
+}
+
+/* Processing Methods */
+.processing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.processing-card {
+  background: white;
+  border-radius: 16px;
+  padding: 35px;
+  box-shadow: 0 4px 16px rgba(62, 39, 35, 0.08);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #f0ede8;
+}
+
+.processing-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(62, 39, 35, 0.15);
+}
+
+.processing-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.processing-card h4 {
+  font-size: 1.5rem;
+  color: #3E2723;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.processing-description {
+  color: #6B5638;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.processing-impact {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #f0ede8;
+}
+
+.processing-impact strong {
+  color: #3E2723;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.processing-impact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.processing-impact li {
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+  color: #5a4a3a;
+  line-height: 1.6;
+}
+
+.processing-impact li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #8B6F47;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.processing-note {
+  background: linear-gradient(135deg, #fff8f0 0%, #faf5eb 100%);
+  border-radius: 12px;
+  padding: 25px;
+  border: 2px solid #e8e6e3;
+  margin-top: 20px;
+}
+
+.processing-note p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #5a4a3a;
+  margin: 0;
+}
+
+.processing-note strong {
+  color: #3E2723;
+  font-weight: 700;
+}
+
+/* Ethiopian Uniqueness */
+.uniqueness-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.uniqueness-card {
+  background: white;
+  border-radius: 16px;
+  padding: 35px;
+  box-shadow: 0 4px 16px rgba(62, 39, 35, 0.08);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-left: 5px solid #8B6F47;
+  border: 1px solid #f0ede8;
+}
+
+.uniqueness-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(62, 39, 35, 0.15);
+}
+
+.uniqueness-card h4 {
+  font-size: 1.4rem;
+  color: #3E2723;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.uniqueness-card p {
+  color: #5a4a3a;
+  line-height: 1.8;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.ethiopian-summary {
+  background: linear-gradient(135deg, #fff8f0 0%, #faf5eb 100%);
+  border-radius: 12px;
+  padding: 30px;
+  border: 2px solid #e8e6e3;
+  margin-top: 20px;
+}
+
+.ethiopian-summary p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #5a4a3a;
+  margin: 0;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .education-tabs {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .tab-button {
+    width: 100%;
+    text-align: left;
+    border-bottom: 2px solid #e8e6e3;
+    border-left: 3px solid transparent;
+  }
+  
+  .tab-button.active {
+    border-left-color: #8B6F47;
+    border-bottom-color: #e8e6e3;
+  }
+  
+  .roast-grid,
+  .processing-grid,
+  .uniqueness-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
